@@ -14,7 +14,7 @@ main {
     font-size: 0;
 }
 
-div [class^="fo"] {
+.foto {
     width: calc(100% / 3 - 40px);
     margin: 20px;
     display: inline-block;
@@ -39,4 +39,46 @@ img {
     background-color: white;
     font-size: 30px;
     text-align: center;
+}
+  .sconto {
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width: 35px;
+    height: 20px;
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+ .sostenibilità {
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width: 85px;
+    height: 20px;
+    display: block;
+    background-color: green;
+    font-size: 15px;
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    display: none;
+}
+
+.sconto + .sostenibilità {
+    margin-left: 40px;
+}
+
+.foto:hover .sconto {
+    display: block;
+}
+.foto:hover .sostenibilità {
+    display: block;
+}
+.foto:hover .cuore {
+    color: red;
 }
