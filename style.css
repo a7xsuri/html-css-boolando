@@ -129,3 +129,18 @@ img {
     text-decoration-line: line-through; 
     left:60px;
 }
+
+img:nth-child(2) {
+    width:100%;
+    object-fit: cover;
+    display: none;
+}
+
+.foto:hover img:nth-child(2){
+    display: block;
+}
+
+.foto:hover img{
+    display: none;
+}
+
